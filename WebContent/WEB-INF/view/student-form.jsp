@@ -13,6 +13,19 @@
 			<br><br>
 			Last Name: <form:input path="lastName" />
 			<br><br>
+			<form:select path="country">
+				<form:option value="Switzerland" label="Switzerland"/>
+				<form:option value="Deutchland" label="Deutchland"/>
+				<form:option value="Norge" label="Norge"/>
+				<form:option value="United Kingdom" label="United Kingdom"/>
+				<form:option value="Australia" label="Australia"/>
+				<form:option value="New Zealand" label="New Zealand"/>
+				<form:option value="Canada" label="Canada"/>
+				<form:option value="USA" label="USA"/>
+				<form:option value="Luxemburg" label="Luxemburg"/>
+				<form:option value="Lichtenstein" label="Lichtenstein"/>
+			</form:select>
+			<br><br>
 			<input type="submit" value="submit" /> 
 		</form:form>
 	</body>
