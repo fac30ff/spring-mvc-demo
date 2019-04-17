@@ -20,6 +20,9 @@ public class Customer {
 	@NotNull(message="is required")
 	private Integer freePasses;
 	
+	@CourseCode(value= {"IG"}, message="must contain IG prefix")
+	private String courseCode;
+	
 	@Pattern(regexp="^[a-zA-Z0-9]{5}", message="only 5 chars/digits")
 	private String postalCode; 
 	
@@ -54,5 +57,13 @@ public class Customer {
 	public void setPostalCode(String postalCode) {
 		this.postalCode = postalCode;
 	}
-	
+
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
+		
 }
